@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+<title>Jquery-图片切换和图片放大镜效果(jqzoom + jcarousel)</title>
+<link href="css/photo_gallery.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="page">
+  <h1 style=" margin-bottom:50px; margin-top:100px;">Jquery图片切换和图片放大镜效果(采用 jqzoom + jcarousel 实现)</h1>
+  <!-- 代码开始    -->
+<div class="itme_pic">
+	<div class="main_pic">
+        <div class="pic">
+            <div class="jqzoom">
+               <img alt="" id="_middleImage" src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg">
+            </div>
+        </div>
+    </div>
+    <ul id="mycarousel" class="jcarousel-skin-product">
+        <li>
+            <div class="pic">
+                <img src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg"></div>
+        </li>
+        <li>
+            <div class="pic">
+                <img src="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg"></div>
+        </li>
+    </ul>
+</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jcarousel_min.js"></script> 
+<script type="text/javascript" src="js/jqzoom_min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function() {
+   $("#mycarousel").jcarousel({initCallback:mycarousel_initCallback});
+   $(".jqzoom").jqueryzoom({
+		xzoom:420,
+		yzoom:420,
+		offset:10,
+		position:"right",
+        preload:1,
+		lens:1
+	});
+
+});
+function mycarousel_initCallback(carousel){
+	$("#mycarousel li").mouseover(function(){
+		var JQ_img = $("img",this);
+		var image_show = JQ_img.attr("showimg");
+		var image_big = JQ_img.attr("bigimg"); 
+		//$("#_middleImage").attr("src" + "images" + image_show).attr("bigimg" + "images" +  image_big); 
+		$("#_middleImage").attr("src",image_show).attr("bigimg",image_big); 
+		$(this).siblings().each(function(){
+			$(this).removeClass("cur_on");
+		})
+		$(this).addClass("cur_on");
+	})
+};
+ </script>
+ <!-- 代码结束    -->
+</body>
+</html>
