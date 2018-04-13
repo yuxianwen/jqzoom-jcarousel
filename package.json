@@ -1,0 +1,17 @@
+{
+  "name": "jqzoom-jcarousel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/yuxianwen/jqzoom-jcarousel.git",
+  "author": "xianwen.yu <xianwen.yu@wmand.me>",
+  "license": "MIT",
+  "scripts": {
+    "parcel": "parcel index.html"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "node-sass": "^4.8.3",
+    "postcss-modules": "^1.1.0"
+  },
+  "dependencies": {}
+}
