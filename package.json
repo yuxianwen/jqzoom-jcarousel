@@ -6,7 +6,8 @@
   "author": "xianwen.yu <xianwen.yu@wmand.me>",
   "license": "MIT",
   "scripts": {
-    "parcel": "parcel index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "devDependencies": {
     "autoprefixer": "^8.2.0",
