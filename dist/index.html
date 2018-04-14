@@ -1,1 +1,57 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Jquery-图片切换和图片放大镜效果(jqzoom + jcarousel)</title> <link rel="stylesheet" href="/jqzoom-jcarousel.d35da404.css"></head> <body> <div id="page"> <h1 style="margin-bottom:50px;margin-top:100px">Jquery图片切换和图片放大镜效果(采用 jqzoom + jcarousel 实现)</h1>  <div class="itme_pic"> <div class="main_pic"> <div class="jqzoom"> <img alt="" id="_middleImage" src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg"> </div> </div> <div class="jcarousel-skin-tango"> <div class="jcarousel-container jcarousel-container-horizontal"> <div class="jcarousel-clip jcarousel-clip-horizontal"> <ul id="mycarousel" class="jcarousel-list jcarousel-list-horizontal"> <li> <img src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg"> </li> <li> <img src="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg"> </li> <li> <img src="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg"> </li> <li> <img src="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg"> </li> <li> <img src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg"> </li> <li> <img src="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg"> </li> <li> <img src="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg"> </li> <li> <img src="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg"> </li> </ul> </div> </div> </div> </div> </div> <script src="/jqzoom-jcarousel.8326170c.js"></script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery-图片切换和图片放大镜效果(jqzoom + jcarousel)</title>
+<link rel="stylesheet" href="/dist/jqzoom-jcarousel.css"></head>
+
+<body>
+    <div id="page">
+        <h1 style=" margin-bottom:50px; margin-top:100px;">Jquery图片切换和图片放大镜效果(采用 jqzoom + jcarousel 实现)</h1>
+        <!-- 代码开始    -->
+        <div class="itme_pic">
+            <div class="main_pic">
+                <div class="jqzoom">
+                    <img alt="" id="_middleImage" src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg">
+                </div>
+            </div>
+            <div class="jcarousel-skin-tango">
+                <div class="jcarousel-container jcarousel-container-horizontal">
+                    <div class="jcarousel-clip jcarousel-clip-horizontal">
+                        <ul id="mycarousel" class="jcarousel-list jcarousel-list-horizontal">
+                            <li>
+                                <img src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd2.alicdn.com/imgextra/i2/85109328/T2BWaYXshaXXXXXXXX_!!85109328.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/imgextra/i1/85109328/T2UL4yXpXbXXXXXXXX_!!85109328.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd4.alicdn.com/bao/uploaded/i4/T1RVdwFtBcXXXXXXXX_!!0-item_pic.jpg">
+                            </li>
+                            <li>
+                                <img src="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_50x50.jpg" showimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg_400x400.jpg" bigimg="http://gd1.alicdn.com/bao/uploaded/i1/T1RLoKFbheXXXXXXXX_!!0-item_pic.jpg">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/dist/jqzoom-jcarousel.js"></script>
+</body>
+</html>

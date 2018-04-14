@@ -1,8 +1,3 @@
-import './src/css/style.scss'
-import jquery from './src/js/jquery'
-
-require('./src/js/jcarousel')
-require('./src/js/jqzoom')
 $(document).ready(function() {
     $("#mycarousel").jcarousel({initCallback:mycarousel_initCallback});
     $(".jqzoom").jqueryzoom({
@@ -27,4 +22,3 @@ $(document).ready(function() {
         })
     };
  });
- 

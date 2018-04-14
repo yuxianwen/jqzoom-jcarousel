@@ -2,6 +2,32 @@
 .jcarousel-skin-tango {
   position: relative;
   margin-bottom: 30px; }
+  .jcarousel-skin-tango .jcarousel-container {
+    border-radius: 10px; }
+  .jcarousel-skin-tango .jcarousel-container-horizontal {
+    height: 62px;
+    padding: 0px 14px;
+    overflow: hidden; }
+  .jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width: 370px;
+    height: 54px;
+    margin-top: 5px; }
+  .jcarousel-skin-tango .jcarousel-item {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    margin: 1px 12px 0 12px;
+    text-align: center;
+    font-size: 0; }
+    .jcarousel-skin-tango .jcarousel-item::before {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+  .jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000; }
 
 .jcarousel-clip {
   z-index: 2;
@@ -29,30 +55,6 @@
 .jcarousel-prev {
   z-index: 3;
   display: none; }
-
-.jcarousel-skin-tango .jcarousel-container {
-  border-radius: 10px; }
-
-.jcarousel-skin-tango .jcarousel-container-horizontal {
-  height: 62px;
-  padding: 0px 14px;
-  overflow: hidden; }
-
-.jcarousel-skin-tango .jcarousel-clip-horizontal {
-  width: 370px;
-  height: 54px;
-  margin-top: 5px; }
-
-.jcarousel-skin-tango .jcarousel-item {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #ddd;
-  margin: 1px 12px 0 12px;
-  text-align: center; }
-
-.jcarousel-skin-tango .jcarousel-item-placeholder {
-  background: #fff;
-  color: #000; }
 
 .jcarousel-next-horizontal,
 .jcarousel-prev-horizontal {
@@ -110,15 +112,12 @@
 .jqzoom {
   position: relative;
   padding: 0px;
-  margin-bottom: 10px;
   cursor: pointer;
   text-align: center;
   overflow: hidden;
   vertical-align: middle;
-  display: inline-block;
-  *display: inline;
   zoom: 1;
-  width: 100%; }
+  display: inline-block; }
 
 .zoomdiv {
   z-index: 100;
@@ -148,14 +147,6 @@
   filter: alpha(Opacity=50);
   cursor: move; }
 
-.itme_pic .main_pic::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  width: 0;
-  overflow: hidden;
-  vertical-align: middle; }
-
 /** User **/
 #page {
   width: 1200px;
@@ -170,4 +161,12 @@
   border: 1px solid #ddd;
   background-color: #ececec;
   margin-bottom: 10px;
-  text-align: center; }
+  text-align: center;
+  font-size: 0; }
+  .main_pic::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    overflow: hidden; }
